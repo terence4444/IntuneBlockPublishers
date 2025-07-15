@@ -1,0 +1,153 @@
+<RuleCollection Type="Exe" EnforcementMode="NotConfigured">
+    <FilePathRule Id="921cc481-6e17-4653-8f75-050b80acca20"
+        Name="(Default Rule) All files located in the Program Files folder"
+        Description="Allows members of the Everyone group to run applications that are located in the Program Files folder."
+        UserOrGroupSid="S-1-1-0" Action="Allow">
+        <Conditions>
+            <FilePathCondition Path="%PROGRAMFILES%\*" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a61c8b2c-a319-4cd0-9690-d2177cad7b51"
+        Name="(Default Rule) All files located in the Windows folder"
+        Description="Allows members of the Everyone group to run applications that are located in the Windows folder."
+        UserOrGroupSid="S-1-1-0" Action="Allow">
+        <Conditions>
+            <FilePathCondition Path="%WINDIR%\*" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="fd686d83-a829-4351-8ff4-27c7de5755d2" Name="(Default Rule) All files"
+        Description="Allows members of the local Administrators group to run all applications."
+        UserOrGroupSid="S-1-5-32-544" Action="Allow">
+        <Conditions>
+            <FilePathCondition Path="*" />
+        </Conditions>
+    </FilePathRule>
+    <FilePublisherRule Id="ce6fe136-060b-4936-9ed8-5bf01e1564db" Name="Block Sogou" Description=""
+        UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=BEIJING SOGOU TECHNOLOGY DEVELOPMENT CO., LTD., S=BEIJING, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="1c79185c-c077-4f87-ad21-e17fcc637eff" Name="Block Tencent" Description=""
+        UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=TENCENT TECHNOLOGY (SHENZHEN) COMPANY LIMITED, L=SHENZHEN, S=GUANGDONG PROVINCE, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="f3c70f5b-40ba-4082-ae40-ef1ad7dd1dcd" Name="Block Qihu360" Description=""
+        UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=BEIJING QIHU TECHNOLOGY CO., LTD., L=BEIJING, S=BEIJING, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="e3748666-0f9b-47bf-93bf-df86c53c5f15" Name="Block Alibaba" Description=""
+        UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=ALIBABA (CHINA) NETWORK TECHNOLOGY CO.,LTD., L=杭州市, S=浙江省, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="29f7b9c4-205d-46c1-b213-08aeb065629c" Name="Block DUYOU (Baidu NetDisk)"
+        Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=BEIJING DUYOU SCIENCE AND TECHNOLOGY CO.,LTD., S=BEIJING, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="d983ca5a-2007-46ba-9751-d2ed168dda87" Name="Block NETEASE YOUDAO"
+        Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=NETEASE YOUDAO INFORMATION TECHNOLOGY (BEIJING) CO.,LTD., S=BEIJING, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="3ade7964-cc8a-4e35-a077-d397f5eb5af1" Name="Block Kingsoft(Zhuhai)"
+        Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=ZHUHAI KINGSOFT OFFICE SOFTWARE CO., LTD., L=珠海市, S=广东省, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="f733c569-207d-4712-a654-7f859d043f52" Name="Block BAIDU NETCOM"
+        Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=BEIJING BAIDU NETCOM SCIENCE AND TECHNOLOGY CO.,LTD, L=BEIJING, S=BEIJING, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="e758fc11-0784-4e9e-9baa-ceff7e91379e" Name="Block CMB Bank"
+        Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=CHINA MERCHANTS BANK CO., LTD, L=SHENZHEN, S=GUANGDONG PROVINCE, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="5b00455c-9acf-47f8-a5c2-8db0f4438df8" Name="Block 2345" Description=""
+        UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=SHANGHAI 2345 MOBILE TECHNOLOGY CO., LTD., S=上海市, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="d19b7879-2cf7-4306-9b02-fed1c986768f" Name="Block LuDaShi" Description=""
+        UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition PublisherName="O=成都奇鲁科技有限公司, L=成都市, S=四川省, C=CN" ProductName="*"
+                BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="0652545a-b2e0-416a-983a-a8ed709fb967" Name="Block KINGSOFT SECURITY"
+        Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition
+                PublisherName="O=BEIJING KINGSOFT SECURITY SOFTWARE CO.,LTD, S=北京市, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="727ab836-a936-45ff-ba4d-140dbb77bac0" Name="Block Xunlei" Description=""
+        UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+            <FilePublisherCondition PublisherName="O=深圳市迅雷网络技术有限公司, L=SHENZHEN, S=GUANGDONG, C=CN"
+                ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+</RuleCollection>
