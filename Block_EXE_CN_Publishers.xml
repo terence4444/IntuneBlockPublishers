@@ -150,4 +150,18 @@
             </FilePublisherCondition>
         </Conditions>
     </FilePublisherRule>
+    <FilePublisherRule Id="dec5c41e-cc4f-461f-9d50-875562be9b18" Name="Block AI Doubao" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=北京春田知韵科技有限公司, S=北京市, C=CN" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="b147ad40-d7c6-44cf-b29a-c85537ba25f1" Name="Block IFLYTEK" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=IFLYTEK CO.,LTD., L=HEFEI, S=ANHUI, C=CN" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
 </RuleCollection>
