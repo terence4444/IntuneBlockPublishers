@@ -22,3 +22,7 @@ Go to:
 - Ensure the XML structure complies with AppLocker policy schema.
 - Changes may take time to apply depending on sync policies.
 
+## How to get new entries:
+- secpol.msc → Application Control Policies → AppLocker
+- Create New Rule... and follow the wizard (Slide to Publisher)
+- AppLocker → Export Policy...
